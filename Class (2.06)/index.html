@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>классы</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Задачи</h1>
+        <div class="space" style="text-align:center;">
+            <p>
+                <i>Задание 1.</i>
+                Реализовать класс, описывающий окружность. В классе долж-
+                ны быть следующие компоненты:
+                ■■ поле, хранящее радиус окружности;
+                ■■ get-свойство, возвращающее радиус окружности;
+                ■■ set-свойство, устанавливающее радиус окружности;
+                ■■ get-свойство, возвращающее диаметр окружности;
+                ■■ метод, вычисляющий площадь окружности;
+                ■■ метод, вычисляющий длину окружности.
+                Продемонстрировать работу свойств и методов.
+            </p>
+            <br>
+            <br>
+            <input list="r" id="p4a" type="text" placeholder="радиус" onclick="this.value=''">
+            <datalist id="r">
+                <option value="10"></option>
+                <option value="20">
+                <option value="5">
+            </datalist>
+            <br>
+            <div class="button">
+                <button onclick="setRadius(p4a.value)">1. установить радиус</button>
+                <button onclick="getDiameter()">показать диаметр</button>
+                <button onclick="circleArea()">вычислить площадь </button>
+                <button onclick="circlePerimeter()">вычислить периметр </button>
+            </div>
+
+      
+
+        <div class="space" style="text-align:center;">
+            <p>
+                <i> Задание 2.</i>
+                Реализовать класс, описывающий html элемент.
+                Класс HtmlElement должен содержать внутри себя:
+                ■■ название тега;
+                ■■ самозакрывающийся тег или нет;
+                ■■ текстовое содержимое;
+                ■■ массив атрибутов;
+                ■■ массив стилей;
+                ■■ массив вложенных таких же тегов;
+                метод для установки атрибута;
+                ■■ метод для установки стиля;
+                ■■ метод для добавления вложенного элемента в конец теку-
+                щего элемента;
+                ■■ метод для добавления вложенного элемента в начало те-
+                кущего элемента;
+                ■■ метод getHtml(), который возвращает html код в виде
+                строки, включая html код вложенных элементов.
+                С помощью написанного класса реализовать следующий блок
+                и добавить его на страницу с помощью document.write().
+            </p>
+            <div class="button">
+                <button onclick="show()">вывести</button>
+            </div>
+
+            <div class="out">
+                <p id="out"></p>
+            </div>
+
+        <div class="space" style="text-align:center;">
+            <p>
+                <i> Задание 3. </i>
+                Задание 3
+                Реализовать класс, который описывает css класс.
+                Класс CssClass должен содержать внутри себя:
+                ■■ название css класса;
+                ■■ массив стилей;
+                ■■ метод для установки стиля;
+                ■■ метод для удаления стиля;
+                ■■ метод getCss(), который возвращает css код в виде строки.
+            </p>        
+            <div class="button">
+                <button onclick="showCss()">показать</button>                
+            </div>
+            <div class="out">
+                <p id="out3"></p>
+            </div>
+            <p id="pp3"></p>
+            <p id="pp3a"></p>
+
+            <div class="space" style="text-align:center;">
+                <p>
+                    <i> Задание 4. </i>
+                    Реализовать класс, описывающий блок html документ.
+                    Класс HtmlBlock должен содержать внутри себя:
+                    ■■ коллекцию стилей, описанных с помощью класса CssClass;
+                    ■■ корневой элемент, описанный с помощью класса
+                    HtmlElement;
+                    ■■ метод getCode(), который возвращает строку с html ко-
+                    дом (сначала теги style с описанием всех классов, а потом
+                    все html содержимое из корневого тега и его вложенных
+                    элементов).
+                    С помощью написанных классов реализовать следующий блок
+                    (см. рис. 2) и добавить его на страницу с помощью document.write().
+                </p>
+                <div class="button">
+                    <button onclick="showBlock()">показать</button>                
+                </div>
+                <br>
+               
+                <br>
+                <br>
+                <div class="out">
+                  
+                    <p id="out4"></p>
+                </div>
+                <p id="pp4"></p>
+                    </div>
+                </div>
+</body>
+<script src="js/scriptTwo.js"></script>
+</body>
+
+</html>
